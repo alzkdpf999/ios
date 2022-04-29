@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import UserNotifications
+import DLLocalNotifications
 
 struct tap:View {
     @State var but = false
@@ -21,7 +23,15 @@ struct tap:View {
         timematter.dateFormat = "HH:mm"
         return timematter
     }
+    func setnotifi()-> Void{
+        let manager = gogogo()
+        manager.requestPermission()
+        manager.RepeatingNotification(start: startDay, end: endDay)
+      
+    }
+    
     var body: some View{
+  
         NavigationView{
             VStack{
                 Toggle(isOn: $but){
@@ -31,6 +41,7 @@ struct tap:View {
                 .padding(.horizontal, 4)
                 .frame(width: 300, height: 100)
                 if but{
+                  
                     NavigationLink(destination: dma(re:$re,startDay: $startDay, endDay: $endDay))
                     {
                         VStack{
@@ -131,3 +142,22 @@ struct dma : View{
 }
 }
 
+//알람 일단 1분마다
+class gogogo{
+    
+func requestPermission() -> Void{
+    UNUserNotificationCenter
+        .current().requestAuthorization(options: [.alert,.badge,.alert] ){
+            granted, error in
+            if granted == true && error == nil{
+                print(granted)
+            }
+            print(granted)
+        }
+}
+    func RepeatingNotification(start:Date , end:Date){
+    let scheduler = DLNotificationScheduler()
+    scheduler.repeatsFromToDate(identifier: "test", alertTitle: "title", alertBody: "body", fromDate: start, toDate: end, interval: 60, repeats: .none)
+    scheduler.scheduleAllNotifications()
+}
+}

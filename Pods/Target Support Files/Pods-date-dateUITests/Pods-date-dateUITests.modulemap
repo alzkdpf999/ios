@@ -1,0 +1,6 @@
+framework module Pods_date_dateUITests {
+  umbrella header "Pods-date-dateUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
