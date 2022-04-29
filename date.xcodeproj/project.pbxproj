@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F25B6D5281BEC7B009C84BA /* noti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F25B6D4281BEC7B009C84BA /* noti.swift */; };
 		0F3CC3D1281B8D90005AEB86 /* temep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3CC3D0281B8D90005AEB86 /* temep.swift */; };
 		0F97C6A52817B1A600323185 /* dateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97C6A42817B1A600323185 /* dateApp.swift */; };
 		0F97C6A72817B1A600323185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F97C6A62817B1A600323185 /* ContentView.swift */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F25B6D4281BEC7B009C84BA /* noti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noti.swift; sourceTree = "<group>"; };
 		0F25B6D6281BF10D009C84BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0F3CC3D0281B8D90005AEB86 /* temep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temep.swift; sourceTree = "<group>"; tabWidth = 4; };
 		0F97C6A12817B1A600323185 /* date.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = date.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,7 +103,6 @@
 				0F97C6A82817B1A700323185 /* Assets.xcassets */,
 				0F97C6AA2817B1A700323185 /* Preview Content */,
 				0F3CC3D0281B8D90005AEB86 /* temep.swift */,
-				0F25B6D4281BEC7B009C84BA /* noti.swift */,
 			);
 			path = date;
 			sourceTree = "<group>";
@@ -268,7 +265,6 @@
 				0F97C6A72817B1A600323185 /* ContentView.swift in Sources */,
 				0F3CC3D1281B8D90005AEB86 /* temep.swift in Sources */,
 				0F97C6A52817B1A600323185 /* dateApp.swift in Sources */,
-				0F25B6D5281BEC7B009C84BA /* noti.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
